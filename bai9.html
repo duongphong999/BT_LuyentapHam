@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverseArr(arr){
+            let n = arr.length;
+            let mid = Math.floor(n/2);
+            let temp;
+            for(let i = n-1; i>= mid; i--){
+                temp = arr[n-i-1];
+                arr[n-i-1] = arr[i];
+                arr[i] = temp;
+            }return arr;
+        }
+    </script>
+</body>
+</html>
